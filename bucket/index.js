@@ -149,10 +149,12 @@ bucket._sendRequest = function () {
     }
 };
 bucket._parseOutput = function (data) {
-    var location = this._customForkName;
+    var forkedRepoName = this._customForkName;
 
-    if (this._command == 'fork') {
-        console.log('Repo was forked into "{location}"'.replace('{location}', location));
+    if (this._command === 'fork') {
+        console.log('Repo was forked into "{forkedRepoName}"'.replace('{forkedRepoName}', forkedRepoName));
+    } else if (this._command === 'create') {
+        console.log('Repo was create at "{repoName}"'.replace('{repoName}', this._repoName));
     }
 };
 bucket._onError = function (data) {
