@@ -16,7 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "open": "0.0.4",
-    "request": "~2.30.0",
-    "prompt": "~0.2.12"
+    "request": "2.30.0",
+    "prompt": "0.2.12",
+    "commander": "2.1.0"
   }
 }
