@@ -46,7 +46,7 @@ config.help = {
 config.errorCodes = {
     '400': 'Something went wrong.',
     '401': 'Account credentials required.',
-    '403': 'Sorry acess to the repo is denied.',
+    '403': 'Sorry access to the repo is denied.',
     '404': 'The repo was not found.',
     '405': "You can't do that"
 };

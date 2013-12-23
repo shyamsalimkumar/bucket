@@ -2,4 +2,6 @@
 
 var bucket = require('./bucket');
 
-bucket.init();
+// console.log(bucket);
+
+// bucket.init();
