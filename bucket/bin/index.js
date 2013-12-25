@@ -70,7 +70,7 @@ Bucket.prototype._getCustomRepoName = function (name) {
 Bucket.prototype.help = function () {
     var i;
 
-    if (this._options.length > 0) {
+    if (this._options && this._options.length > 0) {
         var helpText = this._config.help[this._options[0]];
         if (helpText) {
             console.log(helpText);

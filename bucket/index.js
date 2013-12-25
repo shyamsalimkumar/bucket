@@ -71,7 +71,6 @@ bucket
     .action(function (command) {
         var commandName = this.rawArgs[2],
             bckt = new Bucket(commandName, this.rawArgs.slice(3));
-        // Bucket.init(commandName, this.rawArgs.slice(3));
     });
 
 bucket.parse(process.argv);
