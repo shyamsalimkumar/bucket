@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 var config = require('../config'),
+    request = require('request'),
+    prompt = require('prompt'),
     Bucket;
 
 // Constructor
@@ -11,10 +13,13 @@ Bucket = function (command, options) {
     this._config = config;
     this._getOwnerRepoName(args[1]);
 
-    if (this._command === 'pullreq') {
+    if (this._command === 'pullreq' && !!options) {
         this._getIssueId(options.issueId);
         this._getPullReqTask(options.pullReqActivity);
     }
+    // if (this._command === 'fork') {
+    //     this._getCustomRepoName(options.customRepoName);
+    // }    
 
     this[this._command]();
 };
@@ -148,7 +153,11 @@ Bucket.prototype._beginRequest = function () {
         prompt.get(schema, function (err, result) {
             self._credUsername = result.username;
             self._credPassword = result.password;
-            self._sendRequest();
+            if (result.username && result.password) {
+                self._sendRequest();
+            } else {
+                console.log('Username and password are required');
+            }
         });
     } else {
         this._sendRequest();
@@ -172,7 +181,7 @@ Bucket.prototype._sendRequest = function () {
         req.auth(this._credUsername, this._credPassword);
     }
 
-    if (!!Object.keys(this._postData).length) {
+    if (!!Object.keys(this._postData).length && this._command === 'fork') {
         req.form().append('name', this._customForkName);
     }
 };
@@ -189,7 +198,6 @@ Bucket.prototype._parseOutput = function (data) {
 };
 // Display the appropriate error message
 Bucket.prototype._onError = function (data) {
-    console.log(data.statusCode);
     if (data.body) {
         try {
             console.log(JSON.parse(data.body).error.message);            

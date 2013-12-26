@@ -2,8 +2,6 @@
 
 var open = require('open'),
     http = require('http'),
-    request = require('request'),
-    prompt = require('prompt'),
     querystring = require('querystring'),
     bucket = require('commander'),
     Bucket = require('./bin');
