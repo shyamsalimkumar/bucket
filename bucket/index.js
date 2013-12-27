@@ -77,7 +77,6 @@ module.exports = bucket;
 
 /*
 Create a repo
-Clone a repo
 Fork a repo
 Pull request
 Browse wiki

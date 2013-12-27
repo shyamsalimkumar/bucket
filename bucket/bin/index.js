@@ -53,6 +53,11 @@ Bucket.prototype.pullreq = function () {
 
     this._url = repoUrl.join('/').replace('{id}', this.issueId || '');
 
+    // If sending a pull request to the cloned repo
+    if (!this._options) {
+        this._type = 'POST';
+    }
+
     this._beginRequest();
 };
 // Read wiki of a repo
