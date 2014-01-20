@@ -1,16 +1,20 @@
 {
   "name": "bucket",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "What hub is to Github, bucket is to Bitbucket",
   "main": "index.js",
   "scripts": {
     "test": "mocha lib/tests/"
   },
-  "repository": "https://bitbucket.org/clawsofbanana/bucket",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/clawsofbanana/bucket"
+  },
   "keywords": [
     "bitbucket",
     "git",
-    "bucket"
+    "bucket",
+    "cli"
   ],
   "author": "Shyam S Kumar",
   "license": "MIT",
@@ -18,7 +22,8 @@
     "open": "0.0.4",
     "request": "2.30.0",
     "prompt": "0.2.12",
-    "commander": "2.1.0"
+    "commander": "2.1.0",
+    "nodegit": "0.1.0"
   },
   "devDependencies": {
     "mocha": "1.16.2"
