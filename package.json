@@ -4,7 +4,7 @@
   "description": "What hub is to Github, bucket is to Bitbucket",
   "main": "index.js",
   "scripts": {
-    "test": "mocha bucket/tests/"
+    "test": "mocha lib/tests/"
   },
   "repository": "",
   "keywords": [
