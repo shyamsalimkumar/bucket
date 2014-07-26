@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha lib/tests/"
   },
-  "repository": "",
+  "repository": "https://bitbucket.org/clawsofbanana/bucket",
   "keywords": [
     "bitbucket",
     "git",
@@ -22,5 +22,9 @@
   },
   "devDependencies": {
     "mocha": "1.16.2"
-  }
+  },
+  "bin": {
+    "bucket": "./bin/bucket.js"
+  },
+  "preferGlobal": "true"
 }
