@@ -1,0 +1,12 @@
+# npm builds
+node_js:
+  - 0.10.24
+  - 0.8.14
+# git config
+git:
+ submodules: false
+
+# branches to build off
+branches:
+  only:
+    - master
