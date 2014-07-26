@@ -1,4 +1,5 @@
 #BUCKET
+![buildStatus](https://api.shippable.com/projects/53d349b38d0713c7020f924b/badge/master?nocache=2)
 
 ###Intro
 
@@ -23,7 +24,7 @@ I recreated some of the functionality of Hub. Mainly creating a new repo, forkin
 
 1. Create a new repo
     `git init` to initialize the git repository locally, then 
-    `bucket create username repo-name` to create a repo at https://bitbucket.org/username/repo-name and add the remote 'origin' as the same.
+    `bucket create username/repo-name` to create a repo at https://bitbucket.org/username/repo-name and add the remote 'origin' as the same.
 2. Forking a repo
     `git clone https://bitbucket.org/username/repo-name.git && cd repo-name` to clone a repo into your local machine and change into its directory. Then do a `bucket fork` to fork the repo into your own. You could pass in a custom name for the forked repo using `bucket fork custom-name`
 3. Submitting a pull request
