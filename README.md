@@ -1,6 +1,5 @@
 #BUCKET
 [![Build Status](https://travis-ci.org/shyamsalimkumar/bucket.svg)](https://travis-ci.org/shyamsalimkumar/bucket)
-![buildStatus](https://api.shippable.com/projects/53d349b38d0713c7020f924b/badge/master?nocache=2)
 
 ###Intro
 
