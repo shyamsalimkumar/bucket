@@ -71,4 +71,7 @@ $RECYCLE.BIN/
 
 .*
 !.gitignore
+!.jshintrc
+!.jscsrc
+!.travis.yml
 *~

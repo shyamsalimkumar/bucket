@@ -1,0 +1,18 @@
+# language setting
+language: node_js
+# version numbers, testing against versions of node
+node_js:
+  - "0.11"
+  - "0.10"
+  - "0.8"
+  - "0.6"
+before_script:
+  - npm install -g mocha
+
+# git config
+git:
+ submodules: false
+# branches to build off
+branches:
+  only:
+    - master
