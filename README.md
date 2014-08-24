@@ -1,5 +1,5 @@
 #BUCKET
-[![Build Status](https://travis-ci.org/shyamsalimkumar/bucket.svg)](https://travis-ci.org/shyamsalimkumar/bucket)
+[![Build Status](https://travis-ci.org/shyamsalimkumar/bucket.svg?branch=dev)](https://travis-ci.org/shyamsalimkumar/bucket)
 
 ###Intro
 
