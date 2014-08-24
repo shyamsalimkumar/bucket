@@ -19,11 +19,11 @@
   "author": "Shyam S Kumar",
   "license": "MIT",
   "dependencies": {
-    "open": "0.0.4",
-    "request": "2.30.0",
-    "prompt": "0.2.12",
     "commander": "2.1.0",
-    "nodegit": "0.1.0"
+    "open": "0.0.4",
+    "prompt": "0.2.12",
+    "q": "^1.0.1",
+    "request": "2.30.0"
   },
   "devDependencies": {
     "mocha": "1.16.2",
