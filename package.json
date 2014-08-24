@@ -19,10 +19,10 @@
   "author": "Shyam S Kumar",
   "license": "MIT",
   "dependencies": {
+    "async": "^0.9.0",
     "commander": "2.1.0",
     "open": "0.0.4",
     "prompt": "0.2.12",
-    "q": "^1.0.1",
     "request": "2.30.0"
   },
   "devDependencies": {
